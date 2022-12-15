@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'popins';
+    src: url('/assest/fonts/Poppins-Light.ttf') format('woff2');
+    font-weight: 600px;
+  }
+  @font-face {
+    font-family: 'noto sans';
+    src: url('/assest/fonts/NotoSans-Medium.ttf') format('woff2');
+    font-weight: 500px;
+  }
+  @font-face {
+    font-family: 'ubuntu mono';
+    src: url('/assest/fonts/UbuntuMono-Regular.ttf') format('woff2');
+    font-weight: 400px;
+  }
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    border-radius: 5px;
+}
+.main .index {
+    width: 237px;
+    height: 1587px;
+    background-color: #FAFBFD;
+
+}   
+.index ul {
+    list-style-type: none;
+    color: #9E9E9E; 
+    line-height: 5;
+    padding-left: 55px;
+    margin-top: 80px;
+    
+}
+
+.title{
+    text-align: center;
+    margin-top: 47px;
+    font-family: popins;
+    font-size: 13px;
+
+}
+.index ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #9E9E9E;
+    font-family: noto sans;
+}
+ul li a:hover {
+    color: #090F31;
+    font-weight: 700;
+
+  }
+  ul li a:focus {
+    color: #090F31;
+    font-weight: 700;
+
+  }
+  .buttons{
+    padding-top: 50px;
+    padding-left: 80px; 
+  }
+  .section-input{
+    margin-left: 81px;
+    height:1587px;
+
+  }
+  .section-input .inputs div{
+    width: 300px;
+    height: 105px; 
+    margin: 0;
+  }
+  .header{
+    font-family: 'Popins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+  }
+.inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "input-group1 input-group2 input-group3"
+    "input-group4 input-group5 input-group6"
+    "input-group7 input-group7 input-group7"
+    "input-group8 input-group9 input-group9"
+    "input-group10 input-group11 input-group11"
+    "input-group12 input-group12 input-group12"
+    "input-group13 input-group14 input-group14"
+    "input-group15 input-group15 input-group15"
+    "input-group16 input-group16 input-group16";
+    column-gap: 70px;
+    row-gap: 46px;
+}
+
+.inputs div label {
+    font-family:noto sans;
+    font-weight: 400;
+}
+.inputs div sup {
+    font-family: ubuntu mono;
+    font-weight: 400;
+    color: #333333;
+}
+.input-group1{
+    grid-area: input-group1;
+}
+.input-group2{
+    grid-area: input-group2;
+}
+.input-group2 input:hover {
+border: 1px solid   #333333;
+}
+.input-group3{
+    grid-area: input-group3;
+}
+.input-group3 input:focus{
+    border: 1px solid  #2962FF;
+}
+.input-group3 label{
+    color:#2962FF ;
+}
+.input-group4{
+    grid-area: input-group4;
+}
+.input-group4 label{
+    color: #D32F2F;
+}
+.input-group4 input{
+    border: 1px solid #D32F2F;
+}
+.input-group5{
+    grid-area: input-group5;
+}
+.input-group5 input:hover{
+    border: 1px solid #333333 ;   
+}
+.input-group6{
+    grid-area: input-group6;
+}
+.input-group6 label{
+    color:#D32F2F ;
+}
+.input-group6 input{
+    border: 1px solid #D32F2F ;
+}
+.input-group7{
+    grid-area: input-group7;
+}
+.input-group7 input{
+    background-color: #F2F2F2;
+}
+.input-group8{
+    grid-area: input-group8;
+}
+.input-group9{
+    grid-area: input-group9;
+}
+.input-group10{
+    grid-area: input-group10;
+
+}
+.input-group10 input{
+    background-image: url(/assest/logo_files/call_FILL0_wght400_GRAD0_opsz48.png) ;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 12px;
+    background-position-y: center;
+    padding-left: 45px;
+}
+.input-group11{
+    grid-area: input-group11;
+}
+.input-group11 input{
+    background-image: url(/assest/logo_files/lock_FILL0_wght400_GRAD0_opsz48.png) ;
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position-x: 162px;
+    background-position-y: center;
+    
+}
+.input-group12{
+    grid-area: input-group12;
+}
+.input-group12 input{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-group13{
+    grid-area: input-group13;
+}
+.input-group13 input{
+    width: 200px;
+    height: 40px;
+}
+.input-group14{
+    grid-area: input-group14;
+}
+.input-group15{
+    grid-area: input-group15;
+}
+.input-group15 input{
+    width: 1031px;
+    height: 56px;
+    font-size: 14px;
+    font-weight: bold;
+    }
+
+.input-group16{
+    grid-area: input-group16;
+   
+}
+.input-group16 input{
+    width: 200px;
+    height: 150px;
+    padding: 18px 12px 112px ;
+}
+.sub{
+    font-size: 10px;
+    width: 100%;
+}
+.input-label{
+   font-size: 12px;
+   color: #333333;
+  
+}
+.input{
+    border-radius: 8px;
+    border: 1px solid #828282;
+    width: 200px;
+    height: 56px;
+    padding: 12px 18px;
+    font-size:  14px;
+    font-family: noto sans;
+    font-weight: 500;
+}   
+
+ .footer{
+font-weight: 400;
+font-size: 14px;
+line-height: 12px;
+color: #828282;
+margin-top: 150px;
+ }
+
