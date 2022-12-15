@@ -13,7 +13,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://github.com/mahmut-donmez/figma-inputs">
       Solution
     </a>
     <span> | </span>
